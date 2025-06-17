@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Imobiliária - LAGOON Residence by Santo Amaro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'zinc': {
+                            800: '#27272a',
+                            900: '#18181b'
+                        },
+                        'amber': {
+                            400: '#fbbf24',
+                            500: '#f59e0b'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Modal animations */
+        .modal-enter {
+            animation: modalFadeIn 0.3s ease-out;
+        }
+        
+        @keyframes modalFadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        /* Video modal responsive adjustments */
+        @media (max-width: 768px) {
+            .aspect-video {
+                aspect-ratio: 16/9;
+            }
+        }
+        
+        /* Prevent video controls from overlapping close button */
+        video::-webkit-media-controls {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body class="bg-zinc-900 text-white">
+    
+    <!-- WhatsApp Floating Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://api.whatsapp.com/send?phone=559891193199&text=Olá%2C%20vi%20o%20anúncio%20do%20empreendimento%20no%20Google%20e%20gostaria%20de%20mais%20informações." target="_blank" class="bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-2xl hover:shadow-xl transition-all duration-300 transform hover:scale-110 flex items-center justify-center">
+            <i class="fab fa-whatsapp text-3xl"></i>
+        </a>
+    </div>
+    
+    <!-- Header/Navigation -->
+    <nav class="bg-zinc-800 shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <img src="https://primeimoveisslz.com.br/_next/image?url=%2Flogoprimeimobiliaria.png&w=3840&q=75" alt="Prime Imobiliária" class="h-10 mr-3">
+                   
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#hero" class="text-amber-400 hover:text-amber-500 px-3 py-2 rounded-md text-sm font-medium transition-colors">Início</a>
+                        <a href="#lagoon" class="text-zinc-300 hover:text-amber-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">LAGOON</a>
+                        <a href="#material" class="text-zinc-300 hover:text-amber-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Material</a>
+                        <a href="#about" class="text-zinc-300 hover:text-amber-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">M&N</a>
+                        <a href="https://api.whatsapp.com/send?phone=559891193199&text=Olá%2C%20vi%20o%20anúncio%20do%20empreendimento%20no%20Google%20e%20gostaria%20de%20mais%20informações." target="_blank" class="bg-amber-500 text-black px-4 py-2 rounded-md text-sm font-medium hover:bg-amber-400 transition-colors">
+                            <i class="fab fa-whatsapp mr-2"></i>WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-zinc-300 hover:text-amber-400">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-zinc-800">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#hero" class="text-amber-400 block px-3 py-2 rounded-md text-base font-medium">Início</a>
+                <a href="#lagoon" class="text-zinc-300 hover:text-amber-400 block px-3 py-2 rounded-md text-base font-medium">LAGOON</a>
+                <a href="#material" class="text-zinc-300 hover:text-amber-400 block px-3 py-2 rounded-md text-base font-medium">Material</a>
+                <a href="#about" class="text-zinc-300 hover:text-amber-400 block px-3 py-2 rounded-md text-base font-medium">M&N</a>
+                <a href="https://api.whatsapp.com/send?phone=559891193199&text=Olá%2C%20vi%20o%20anúncio%20do%20empreendimento%20no%20Google%20e%20gostaria%20de%20mais%20informações." target="_blank" class="bg-amber-500 text-black block px-3 py-2 rounded-md text-base font-medium text-center">
+                    <i class="fab fa-whatsapp mr-2"></i>WhatsApp
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="pt-16 min-h-screen flex items-center relative overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="assets/img/img11.jpg" alt="Lençóis Maranhenses" class="w-full h-full object-cover opacity-40">
+            <div class="absolute inset-0 bg-gradient-to-br from-zinc-900/80 via-zinc-800/70 to-zinc-900/80"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
+                    <span class="text-amber-400">LAGOON</span> Residence <br>
+                    <span class="text-2xl md:text-3xl text-zinc-300">by Santo Amaro</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-zinc-300 mb-8 max-w-4xl mx-auto">
+                    Um empreendimento de alto padrão nos <strong class="text-amber-400">Lençóis Maranhenses</strong>, 
+                    no lugar mais apaixonante do Brasil
+                </p>
+                <div class="bg-amber-500/10 backdrop-blur-sm border border-amber-500/20 rounded-2xl p-6 max-w-2xl mx-auto mb-8">
+                    <p class="text-amber-400 font-bold text-lg">
+                        MARAVILHOSO PRA CURTIR. PERFEITO PARA INVESTIR.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#lagoon" class="bg-amber-500 text-black px-8 py-4 rounded-xl font-bold text-lg hover:bg-amber-400 transition-colors transform hover:scale-105">
+                        Conhecer o LAGOON
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=559891193199&text=Olá%2C%20vi%20o%20anúncio%20do%20empreendimento%20no%20Google%20e%20gostaria%20de%20mais%20informações." target="_blank" class="border-2 border-amber-500 text-amber-400 px-8 py-4 rounded-xl font-bold text-lg hover:bg-amber-500 hover:text-black transition-colors">
+                        <i class="fab fa-whatsapp mr-2"></i>Fale Conosco
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Stories Section -->
+    <section class="py-16 bg-zinc-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-amber-400 mb-4">
+                    Conheça o LAGOON Residence
+                </h2>
+                <p class="text-zinc-300 text-lg">
+                    Veja como será este empreendimento exclusivo nos Lençóis Maranhenses
+                </p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-8 items-center justify-center">
+                <!-- Video Story 1 -->
+                <div class="relative bg-zinc-800 rounded-3xl overflow-hidden shadow-2xl max-w-sm w-full group cursor-pointer" onclick="openVideoModal(1)">
+                    <div class="aspect-[9/16] relative">
+                        <img 
+                            src="assets/img/img23.jpg" 
+                            alt="LAGOON Residence Preview"
+                            class="w-full h-full object-cover"
+                        >
+                        
+                        <!-- Play Button -->
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="bg-amber-500 hover:bg-amber-400 rounded-full p-6 transform group-hover:scale-110 transition-all duration-300 shadow-2xl">
+                                <i class="fas fa-play text-black text-3xl ml-1"></i>
+                            </div>
+                        </div>
+                        
+                        <!-- Info overlay -->
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 to-transparent p-4">
+                            <h3 class="text-white font-bold text-sm mb-1">LAGOON Residence</h3>
+                            <p class="text-zinc-300 text-xs">Conheça os detalhes do projeto</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Story 2 -->
+                <div class="relative bg-zinc-800 rounded-3xl overflow-hidden shadow-2xl max-w-sm w-full group cursor-pointer" onclick="openVideoModal(2)">
+                    <div class="aspect-[9/16] relative">
+                        <img 
+                            src="assets/img/img27.jpg" 
+                            alt="Lençóis Maranhenses Preview"
+                            class="w-full h-full object-cover"
+                        >
+                        
+                        <!-- Play Button -->
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="bg-amber-500 hover:bg-amber-400 rounded-full p-6 transform group-hover:scale-110 transition-all duration-300 shadow-2xl">
+                                <i class="fas fa-play text-black text-3xl ml-1"></i>
+                            </div>
+                        </div>
+                        
+                        <!-- Info overlay -->
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 to-transparent p-4">
+                            <h3 class="text-white font-bold text-sm mb-1">Lençóis Maranhenses</h3>
+                            <p class="text-zinc-300 text-xs">A localização mais privilegiada</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Call to Action -->
+            <div class="text-center mt-12">
+                <div class="bg-amber-500/10 backdrop-blur-sm border border-amber-500/20 rounded-2xl p-6 max-w-2xl mx-auto">
+                    <p class="text-amber-400 font-bold text-lg mb-4">
+                        Acompanhe a Prime Imobiliária e fique por dentro de todos os detalhes deste projeto exclusivo
+                    </p>
+                    <a href="https://api.whatsapp.com/send?phone=559891193199&text=Olá%2C%20vi%20o%20anúncio%20do%20empreendimento%20no%20Google%20e%20gostaria%20de%20mais%20informações." target="_blank" class="bg-amber-500 text-black px-8 py-3 rounded-xl font-bold hover:bg-amber-400 transition-colors">
+                        <i class="fab fa-whatsapp mr-2"></i>Fale Conosco Agora
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-zinc-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-3xl md:text-4xl font-bold text-amber-400 mb-2">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <div class="text-zinc-300">Lençóis Maranhenses</div>
+                    <div class="text-sm text-zinc-400">Região mais valorizada</div>
+                </div>
+                <div>
+                    <div class="text-3xl md:text-4xl font-bold text-amber-400 mb-2">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <div class="text-zinc-300">UNESCO</div>
+                    <div class="text-sm text-zinc-400">Candidato a Patrimônio</div>
+                </div>
+                <div>
+                    <div class="text-3xl md:text-4xl font-bold text-amber-400 mb-2">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div class="text-zinc-300">Alto Padrão</div>
+                    <div class="text-sm text-zinc-400">Empreendimento exclusivo</div>
+                </div>
+                <div>
+                    <div class="text-3xl md:text-4xl font-bold text-amber-400 mb-2">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="text-zinc-300">Investimento</div>
+                    <div class="text-sm text-zinc-400">Potencial de valorização</div>
+                </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LAGOON Residence Section -->
+    <section id="lagoon" class="py-16 bg-zinc-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-amber-400 mb-4">
+                    LAGOON Residence by Santo Amaro
+                </h2>
+                <p class="text-zinc-300 text-lg max-w-4xl mx-auto mb-8">
+                    O LAGOON RESIDENCE BY SANTO AMARO será construído em Santo Amaro, nos Lençóis Maranhenses, 
+                    na região turística mais bonita e que mais se valoriza no Maranhão, candidata a ser 
+                    Patrimônio Natural da Humanidade, em aprovação pela UNESCO.
+                </p>
+                <div class="bg-amber-500/10 backdrop-blur-sm border border-amber-500/20 rounded-2xl p-6 max-w-3xl mx-auto">
+                    <p class="text-amber-400 font-bold text-xl">
+                        Os ambientes refletem o estilo de vida de quem vai escolher um resort com 
+                        espaços amplos e integrados, para transformar uma simples reunião num 
+                        inesquecível acontecimento com a família e os amigos.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Galeria de Fotos -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+                <div class="relative group overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300">
+                    <img src="assets/img/img15.jpg" alt="LAGOON Residence" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <div class="relative group overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300">
+                    <img src="assets/img/img19.jpg" alt="Lençóis Maranhenses" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <div class="relative group overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300">
+                    <img src="assets/img/img23.jpg" alt="Resort de Luxo" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <div class="relative group overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300">
+                    <img src="assets/img/img27.jpg" alt="Ambientes Integrados" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <div class="relative group overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300">
+                    <img src="assets/img/img31.jpg" alt="Espaços Amplos" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <div class="relative group overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300">
+                    <img src="assets/img/img35.jpg" alt="Vista Paradisíaca" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+            </div>
+
+            <!-- Características do Empreendimento -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-zinc-800 rounded-2xl p-8 text-center hover:bg-zinc-700 transition-colors">
+                    <i class="fas fa-swimming-pool text-4xl text-amber-400 mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-2">Resort de Luxo</h3>
+                    <p class="text-zinc-300">Infraestrutura completa com piscinas, spa e área de lazer</p>
+                </div>
+                <div class="bg-zinc-800 rounded-2xl p-8 text-center hover:bg-zinc-700 transition-colors">
+                    <i class="fas fa-map text-4xl text-amber-400 mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-2">Localização Única</h3>
+                    <p class="text-zinc-300">No coração dos Lençóis Maranhenses, Santo Amaro</p>
+                </div>
+                <div class="bg-zinc-800 rounded-2xl p-8 text-center hover:bg-zinc-700 transition-colors">
+                    <i class="fas fa-users text-4xl text-amber-400 mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-2">Espaços Integrados</h3>
+                    <p class="text-zinc-300">Ambientes amplos para família e amigos</p>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="https://api.whatsapp.com/send?phone=559891193199&text=Olá%2C%20vi%20o%20anúncio%20do%20empreendimento%20no%20Google%20e%20gostaria%20de%20mais%20informações." target="_blank" class="bg-amber-500 text-black px-12 py-4 rounded-xl font-bold text-lg hover:bg-amber-400 transition-colors transform hover:scale-105">
+                    <i class="fab fa-whatsapp mr-2"></i>Quero Saber Mais sobre o LAGOON
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PDF Book Section -->
+    <section id="material" class="py-16 bg-zinc-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-amber-400 mb-4">
+                    Material Completo do Projeto
+                </h2>
+                <p class="text-zinc-300 text-lg max-w-3xl mx-auto">
+                    Conheça todos os detalhes do LAGOON Residence by Santo Amaro através do nosso material técnico completo
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+                <!-- PDF Viewer -->
+                <div class="bg-zinc-900 rounded-2xl p-3 lg:p-4 shadow-2xl">
+                    <div class="relative bg-white rounded-xl overflow-hidden h-64 sm:h-80 md:h-96 lg:h-[600px]">
+                        <iframe 
+                            src="assets/pdf/book.pdf" 
+                            class="w-full h-full"
+                            frameborder="0"
+                            title="LAGOON Residence - Material Completo"
+                        >
+                            <p class="p-4 text-zinc-600">
+                                Seu navegador não suporta visualização de PDF. 
+                                <a href="assets/pdf/book.pdf" target="_blank" class="text-amber-500 hover:text-amber-400">
+                                    Clique aqui para baixar o arquivo.
+                                </a>
+                            </p>
+                        </iframe>
+                    </div>
+                    
+                    <!-- PDF Controls -->
+                    <div class="flex flex-col sm:flex-row justify-center gap-3 mt-4">
+                        <a href="assets/pdf/book.pdf" target="_blank" class="bg-amber-500 text-black px-4 lg:px-6 py-2 lg:py-3 rounded-xl font-bold hover:bg-amber-400 transition-colors text-center text-sm lg:text-base">
+                            <i class="fas fa-external-link-alt mr-2"></i>Abrir em Nova Aba
+                        </a>
+                        <a href="assets/pdf/book.pdf" download="LAGOON-Residence-Material-Completo.pdf" class="border-2 border-amber-500 text-amber-400 px-4 lg:px-6 py-2 lg:py-3 rounded-xl font-bold hover:bg-amber-500 hover:text-black transition-colors text-center text-sm lg:text-base">
+                            <i class="fas fa-download mr-2"></i>Baixar PDF
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Book Info -->
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-4">
+                            O que você encontrará no material:
+                        </h3>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-amber-500 rounded-full p-3 mr-6 flex-shrink-0">
+                                <i class="fas fa-map-marked-alt text-black text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-lg mb-2">Localização Privilegiada</h4>
+                                <p class="text-zinc-300">Detalhes sobre a localização nos Lençóis Maranhenses e todos os diferenciais da região</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-amber-500 rounded-full p-3 mr-6 flex-shrink-0">
+                                <i class="fas fa-building text-black text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-lg mb-2">Projeto Arquitetônico</h4>
+                                <p class="text-zinc-300">Plantas, renders e especificações técnicas do empreendimento</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="bg-amber-500 rounded-full p-3 mr-6 flex-shrink-0">
+                                <i class="fas fa-chart-pie text-black text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-lg mb-2">Análise de Investimento</h4>
+                                <p class="text-zinc-300">Projeções de retorno e potencial de valorização do investimento</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="bg-amber-500 rounded-full p-3 mr-6 flex-shrink-0">
+                                <i class="fas fa-swimming-pool text-black text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-lg mb-2">Infraestrutura Completa</h4>
+                                <p class="text-zinc-300">Todas as comodidades e facilidades que o resort oferecerá</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-amber-500/10 backdrop-blur-sm border border-amber-500/20 rounded-2xl p-6">
+                        <p class="text-amber-400 font-bold text-lg mb-4">
+                            Quer receber este material diretamente no seu WhatsApp?
+                        </p>
+                        <a href="https://api.whatsapp.com/send?phone=559891193199&text=Olá%2C%20vi%20o%20anúncio%20do%20empreendimento%20no%20Google%20e%20gostaria%20de%20mais%20informações." target="_blank" class="bg-green-500 text-white px-6 py-3 rounded-xl font-bold hover:bg-green-600 transition-colors">
+                            <i class="fab fa-whatsapp mr-2"></i>Receber no WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About M&N Section -->
+    <section id="about" class="py-16 bg-zinc-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-amber-400 mb-6">
+                    M&N Empreendimentos
+                </h2>
+                <p class="text-zinc-300 text-xl max-w-4xl mx-auto">
+                    Os empresários <strong class="text-amber-400">Sérgio Martins</strong> e 
+                    <strong class="text-amber-400">Nicácio Lima</strong> se uniram para criar a M&N Empreendimentos, 
+                    que já nasce com experiência, conhecimento técnico e expertise para oferecer produtos como o 
+                    LAGOON Residence by Santo Amaro.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="flex items-start">
+                        <div class="bg-amber-500 rounded-full p-3 mr-6 flex-shrink-0">
+                            <i class="fas fa-lightbulb text-black text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-white text-xl mb-2">Experiência e Conhecimento</h3>
+                            <p class="text-zinc-300">Unidos pela paixão por empreendimentos únicos, Sérgio e Nicácio trazem anos de experiência no mercado</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="bg-amber-500 rounded-full p-3 mr-6 flex-shrink-0">
+                            <i class="fas fa-map text-black text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-white text-xl mb-2">Localização Estratégica</h3>
+                            <p class="text-zinc-300">Escolheram os Lençóis Maranhenses, um dos lugares mais apaixonantes do Brasil, para criar algo extraordinário</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="bg-amber-500 rounded-full p-3 mr-6 flex-shrink-0">
+                            <i class="fas fa-star text-black text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-white text-xl mb-2">Alto Padrão</h3>
+                            <p class="text-zinc-300">Compromisso com a excelência em cada detalhe do empreendimento para proporcionar experiências inesquecíveis</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-amber-400 to-amber-500 rounded-2xl p-8 text-center relative overflow-hidden">
+                        <div class="absolute inset-0 opacity-10">
+                            <img src="assets/img/img39.jpg" alt="Fundadores M&N" class="w-full h-full object-cover">
+                        </div>
+                        <div class="relative z-10">
+                            <i class="fas fa-handshake text-6xl text-black opacity-30 mb-6"></i>
+                            <h3 class="text-2xl font-bold text-black mb-4">Parceria de Sucesso</h3>
+                            <p class="text-black font-medium text-lg">
+                                "Um empreendimento de alto padrão para você e sua família desfrutar de grandes momentos"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Seção dos Fundadores -->
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-zinc-900 rounded-2xl p-8 text-center">
+                    <div class="w-24 h-24 bg-amber-500 rounded-full mx-auto mb-6 flex items-center justify-center">
+                        <i class="fas fa-user-tie text-3xl text-black"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-amber-400 mb-2">Sérgio Martins</h3>
+                    <p class="text-zinc-300">Empresário visionário com vasta experiência em empreendimentos de alto padrão</p>
+                </div>
+                <div class="bg-zinc-900 rounded-2xl p-8 text-center">
+                    <div class="w-24 h-24 bg-amber-500 rounded-full mx-auto mb-6 flex items-center justify-center">
+                        <i class="fas fa-user-tie text-3xl text-black"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-amber-400 mb-2">Nicácio Lima</h3>
+                    <p class="text-zinc-300">Especialista em desenvolvimento de projetos turísticos e imobiliários exclusivos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prime Imobiliária Section -->
+    <section class="py-16 bg-zinc-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-amber-400 to-amber-500 rounded-2xl p-8 text-center relative overflow-hidden">
+                        <div class="absolute inset-0 opacity-10">
+                            <img src="assets/img/img43.jpg" alt="Prime Imobiliária" class="w-full h-full object-cover">
+                        </div>
+                        <div class="relative z-10">
+                            <img src="https://primeimoveisslz.com.br/_next/image?url=%2Flogoprimeimobiliaria.png&w=3840&q=75" alt="Prime Imobiliária" class="h-16 mx-auto mb-6">
+                            <h3 class="text-3xl font-bold text-black mb-4">Prime Imobiliária</h3>
+                            <p class="text-black font-medium text-lg">
+                                "Sua parceira de confiança para investimentos imobiliários exclusivos"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-8">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-amber-400 mb-6">
+                            Representante Oficial de Vendas
+                        </h2>
+                        <p class="text-zinc-300 text-lg mb-8">
+                            A <strong class="text-amber-400">Prime Imobiliária</strong> é a representante oficial 
+                            de vendas do LAGOON Residence by Santo Amaro, oferecendo atendimento especializado e 
+                            acompanhamento completo em seu investimento.
+                        </p>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="bg-amber-500 rounded-full p-3 mr-6 flex-shrink-0">
+                            <i class="fas fa-handshake text-black text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-white text-xl mb-2">Atendimento Especializado</h3>
+                            <p class="text-zinc-300">Equipe qualificada com profundo conhecimento do projeto e da região</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="bg-amber-500 rounded-full p-3 mr-6 flex-shrink-0">
+                            <i class="fas fa-shield-alt text-black text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-white text-xl mb-2">Segurança no Negócio</h3>
+                            <p class="text-zinc-300">Acompanhamento jurídico e documental completo em todas as etapas</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="bg-amber-500 rounded-full p-3 mr-6 flex-shrink-0">
+                            <i class="fas fa-chart-line text-black text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-white text-xl mb-2">Consultoria em Investimentos</h3>
+                            <p class="text-zinc-300">Orientação completa sobre potencial de valorização e retorno do investimento</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Contact Section -->
+    <section id="contact" class="py-16 bg-zinc-900">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="bg-zinc-800 rounded-2xl p-8 md:p-12">
+                <div class="mb-8">
+                    <i class="fab fa-whatsapp text-6xl text-amber-400 mb-6"></i>
+                    <h2 class="text-3xl md:text-4xl font-bold text-amber-400 mb-4">
+                        Fale Conosco pelo WhatsApp
+                    </h2>
+                    <p class="text-zinc-300 text-lg mb-8">
+                        Entre em contato agora mesmo com a Prime Imobiliária e receba todas as informações 
+                        sobre o LAGOON Residence by Santo Amaro diretamente no seu WhatsApp.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                    <div class="bg-zinc-900 rounded-xl p-6">
+                        <i class="fas fa-clock text-2xl text-amber-400 mb-3"></i>
+                        <h3 class="font-bold text-white mb-2">Atendimento Rápido</h3>
+                        <p class="text-zinc-300 text-sm">Resposta em poucos minutos</p>
+                    </div>
+                    <div class="bg-zinc-900 rounded-xl p-6">
+                        <i class="fas fa-user-tie text-2xl text-amber-400 mb-3"></i>
+                        <h3 class="font-bold text-white mb-2">Consultor Especializado</h3>
+                        <p class="text-zinc-300 text-sm">Atendimento personalizado</p>
+                    </div>
+                    <div class="bg-zinc-900 rounded-xl p-6">
+                        <i class="fas fa-file-alt text-2xl text-amber-400 mb-3"></i>
+                        <h3 class="font-bold text-white mb-2">Documentação Completa</h3>
+                        <p class="text-zinc-300 text-sm">Todas as informações do projeto</p>
+                    </div>
+                </div>
+
+                <a href="https://api.whatsapp.com/send?phone=559891193199&text=Olá%2C%20vi%20o%20anúncio%20do%20empreendimento%20no%20Google%20e%20gostaria%20de%20mais%20informações." target="_blank" class="inline-flex items-center bg-green-500 hover:bg-green-600 text-white px-12 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl">
+                    <i class="fab fa-whatsapp text-2xl mr-3"></i>
+                    Falar com Consultor Agora
+                </a>
+
+                <p class="text-zinc-400 text-sm mt-6">
+                    Clique no botão acima e seja direcionado diretamente para o WhatsApp da Prime Imobiliária
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Modals -->
+    <!-- Modal Video 1 -->
+    <div id="videoModal1" class="fixed inset-0 bg-black bg-opacity-80 z-50 hidden flex items-center justify-center p-4">
+        <div class="relative max-w-4xl w-full max-h-[90vh] bg-zinc-900 rounded-2xl overflow-hidden">
+            <button id="closeModal1" class="absolute top-4 right-4 z-10 bg-zinc-800 hover:bg-zinc-700 text-white rounded-full p-2 transition-colors">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+            <div class="aspect-video">
+                <video 
+                    id="modalVideo1"
+                    class="w-full h-full"
+                    controls
+                    preload="metadata"
+                >
+                    <source src="assets/video/video01.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+            </div>
+            <div class="p-6 bg-zinc-800">
+                <h3 class="text-xl font-bold text-white mb-2">LAGOON Residence</h3>
+                <p class="text-zinc-300">Conheça os detalhes do projeto exclusivo nos Lençóis Maranhenses</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Video 2 -->
+    <div id="videoModal2" class="fixed inset-0 bg-black bg-opacity-80 z-50 hidden flex items-center justify-center p-4">
+        <div class="relative max-w-4xl w-full max-h-[90vh] bg-zinc-900 rounded-2xl overflow-hidden">
+            <button id="closeModal2" class="absolute top-4 right-4 z-10 bg-zinc-800 hover:bg-zinc-700 text-white rounded-full p-2 transition-colors">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+            <div class="aspect-video">
+                <video 
+                    id="modalVideo2"
+                    class="w-full h-full"
+                    controls
+                    preload="metadata"
+                >
+                    <source src="assets/video/video02.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+            </div>
+            <div class="p-6 bg-zinc-800">
+                <h3 class="text-xl font-bold text-white mb-2">Lençóis Maranhenses</h3>
+                <p class="text-zinc-300">A localização mais privilegiada do Brasil para seu investimento</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-zinc-800 py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center text-zinc-400">
+                <p>&copy; 2025 Prime Imobiliária. Representante oficial de vendas do LAGOON Residence by Santo Amaro - M&N Empreendimentos.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+                // Close mobile menu if open
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('bg-opacity-95', 'backdrop-blur-sm');
+            } else {
+                nav.classList.remove('bg-opacity-95', 'backdrop-blur-sm');
+            }
+        });
+
+        // Video Modal Functions
+        function openVideoModal(videoNumber) {
+            const modal = document.getElementById(`videoModal${videoNumber}`);
+            const video = document.getElementById(`modalVideo${videoNumber}`);
+            
+            modal.classList.remove('hidden');
+            modal.classList.add('modal-enter');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+            
+            // Auto play video when modal opens
+            setTimeout(() => {
+                video.play().catch(e => console.log('Auto-play prevented'));
+            }, 300);
+        }
+
+        function closeVideoModal(videoNumber) {
+            const modal = document.getElementById(`videoModal${videoNumber}`);
+            const video = document.getElementById(`modalVideo${videoNumber}`);
+            
+            modal.classList.add('hidden');
+            document.body.style.overflow = ''; // Restore scrolling
+            video.pause();
+            video.currentTime = 0; // Reset video to beginning
+        }
+
+        // Close modal buttons
+        document.getElementById('closeModal1').addEventListener('click', () => closeVideoModal(1));
+        document.getElementById('closeModal2').addEventListener('click', () => closeVideoModal(2));
+
+        // Close modal when clicking outside
+        document.getElementById('videoModal1').addEventListener('click', function(e) {
+            if (e.target === this) closeVideoModal(1);
+        });
+        document.getElementById('videoModal2').addEventListener('click', function(e) {
+            if (e.target === this) closeVideoModal(2);
+        });
+
+        // Close modal with ESC key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeVideoModal(1);
+                closeVideoModal(2);
+            }
+        });
+
+        // Make openVideoModal available globally
+        window.openVideoModal = openVideoModal;
+    </script>
+</body>
+</html>
+</html>
